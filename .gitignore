@@ -1,0 +1,19 @@
+# Ignore Python virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Excel temp and Backup
+~$*.xlsx
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Ignore logs, exports, backups
+logs/
+exports/
+backups/
