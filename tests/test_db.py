@@ -1,9 +1,7 @@
-# src/reports_quickcheck.py
 from pathlib import Path
 import sqlite3
 import pandas as pd
 
-# ---- Settings ----
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DB_PATH = PROJECT_ROOT / "db" / "inventory.sqlite"
 EXPORT_CSV = False  # set True to save CSVs in reports/
@@ -18,7 +16,7 @@ def main():
 
     conn = sqlite3.connect(DB_PATH)
 
-    # 1) Total stock per medicine (sums across batches)
+    # checks - Total stock per medicine (sums across batches)
     total_stock_sql = """
     SELECT m.id, m.medicine_name,
            COALESCE(SUM(b.stock_units), 0) AS total_stock
@@ -31,7 +29,7 @@ def main():
     print("\n=== Total stock per medicine ===")
     print(df_stock.to_string(index=False))
 
-    # 2) Expiring soon (next N days)
+    # checks - Expiring soon (next N days)
     expiring_sql = """
     SELECT m.medicine_name, b.batch_no, b.stock_units, b.expiry_date
     FROM batches b
@@ -43,7 +41,7 @@ def main():
     print(f"\n=== Batches expiring in next {EXPIRY_WINDOW_DAYS} days ===")
     print(df_expiring.to_string(index=False) if not df_expiring.empty else "None")
 
-    # 3) Below reorder level (compare total stock vs medicine.reorder_level)
+    # checks - Below reorder level (compare total stock vs medicine.reorder_level)
     below_reorder_sql = """
     WITH stock AS (
       SELECT medicine_id, SUM(stock_units) AS total_stock
