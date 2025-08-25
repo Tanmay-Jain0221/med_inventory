@@ -33,7 +33,7 @@ Data is ingested from Excel and viewed either through SQL or a small Streamlit d
 
 ---
 
-## Setup
+# Setup
 
 1. Clone the repository:
 	```bash
