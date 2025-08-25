@@ -33,7 +33,7 @@ Data is ingested from Excel and viewed either through SQL or a small Streamlit d
 
 ---
 
-# Setup
+## Setup
 
 1. Clone the repository:
 	```bash
@@ -43,9 +43,9 @@ Data is ingested from Excel and viewed either through SQL or a small Streamlit d
 2. Create a virtual environment and activate it:
    	python -m venv .venv
    	
-	## Windows
+	# Windows
    	.venv\Scripts\activate
-	## macOS/Linux
+	# macOS/Linux
 	source .venv/bin/activate
 
 3. Install requirements:
