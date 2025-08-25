@@ -29,7 +29,7 @@ Data is ingested from Excel and viewed either through SQL or a small Streamlit d
 │ └── app.py 						# Streamlit dashboard
 ├── tests/							# Tests
 ├── requirements.txt
-└── README.md```
+└── README.md
 
 ---
 
@@ -43,9 +43,9 @@ Data is ingested from Excel and viewed either through SQL or a small Streamlit d
 2. Create a virtual environment and activate it:
    	python -m venv .venv
    	
-	### Windows
+	## Windows
    	.venv\Scripts\activate
-	###macOS/Linux
+	## macOS/Linux
 	source .venv/bin/activate
 
 3. Install requirements:
@@ -75,8 +75,8 @@ Data is ingested from Excel and viewed either through SQL or a small Streamlit d
 ---
 
 ## Screenshots
-```
-├── docs/
+
+```docs/
 │
 │	### Terminal Proof
 │ └── terminal_create_schema.png 		(Schema)  
@@ -100,4 +100,4 @@ Data is ingested from Excel and viewed either through SQL or a small Streamlit d
 │	### Excel (data source)
 │ └── excel_batches.png				(Batches)
 │ └── excel_daily_dosage.png			(Daily Dosage)
-│ └── excel_medicines.png				(Medicines)```
+│ └── excel_medicines.png				(Medicines)
