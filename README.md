@@ -16,7 +16,7 @@ Data is ingested from Excel and viewed either through SQL or a small Streamlit d
 
 ## Project Structure
 
-med_inventory/
+```med_inventory/
 ├── data/
 │ └── inventory.xlsx 				# Excel file (source data)
 ├── db/
@@ -27,8 +27,9 @@ med_inventory/
 │ ├── ingest_excel.py 				# Load data from Excel
 │ ├── apply_daily_dosage.py 		# Daily FEFO stock deduction
 │ └── app.py 						# Streamlit dashboard
+├── tests/							# Tests
 ├── requirements.txt
-└── README.md
+└── README.md```
 
 ---
 
@@ -41,8 +42,11 @@ med_inventory/
 
 2. Create a virtual environment and activate it:
    	python -m venv .venv
-   	# Windows
+   	
+	### Windows
    	.venv\Scripts\activate
+	###macOS/Linux
+	source .venv/bin/activate
 
 3. Install requirements:
 	pip install -r requirements.txt
@@ -71,7 +75,7 @@ med_inventory/
 ---
 
 ## Screenshots
-
+```
 ├── docs/
 │
 │	### Terminal Proof
@@ -96,4 +100,4 @@ med_inventory/
 │	### Excel (data source)
 │ └── excel_batches.png				(Batches)
 │ └── excel_daily_dosage.png			(Daily Dosage)
-│ └── excel_medicines.png				(Medicines)
+│ └── excel_medicines.png				(Medicines)```
