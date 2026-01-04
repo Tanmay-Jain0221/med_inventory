@@ -77,33 +77,33 @@ med_inventory/
 
 ```docs/
 │
-│	### Terminal Proof
+│	Terminal Proof
 │ └── terminal_create_schema.png 		(Schema)  
 │ └── terminal_ingest_excel.png  		(Ingest)
 │ └── terminal_apply_daily_dosage.png  (FEFO)
 │ └── terminal_streamlit_run.png		(Stock Moves)
 │
-│	### Database (DB Browser)
+│	Database (DB Browser)
 │ └── db_schema.png 			        (Schema) 
 │ └── db_medicines_table.png		    (Medicines)
 │ └── db_daily_dosage_table.png		    (Daily Dosage)
 │ └── db_stock_moves_after_fefo.png	    (Stock Moves)
 │
-│	### Dashboard (Streamlit)
+│	Dashboard (Streamlit)
 │ └── dashboard_medicines.png			(Medicines)
 │ └── dashboard_batches.png			    (Batches)
 │ └── dashboard_stock_moves.png		    (Stock Moves)
 │ └── dashboard_actions_1.png			(Actions- Adjust Batch to exact quantity)
 │ └── dashboard_actions_2.png			(Actions- Apply Daily FEFO for a date)
 │
-│	### Excel (data source)
+│	Excel (data source)
 │ └── excel_batches.png				(Batches)
 │ └── excel_daily_dosage.png		(Daily Dosage)
 │ └── excel_medicines.png			(Medicines)
-
+```
 ---
 
-###Notes:
+### Notes:
 
 1. This project is a prototype / demonstration system. It is not intended for use in regulated medical or pharmaceutical environments without proper validation and compliance checks.
 2. The code is MIT-licensed. The written analysis and narrative interpretation are not intended for commercial reuse without permission. 
