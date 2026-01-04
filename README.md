@@ -100,3 +100,10 @@ med_inventory/
 │ └── excel_batches.png				(Batches)
 │ └── excel_daily_dosage.png		(Daily Dosage)
 │ └── excel_medicines.png			(Medicines)
+
+---
+
+###Notes:
+
+1. This project is a prototype / demonstration system. It is not intended for use in regulated medical or pharmaceutical environments without proper validation and compliance checks.
+2. The code is MIT-licensed. The written analysis and narrative interpretation are not intended for commercial reuse without permission. 
